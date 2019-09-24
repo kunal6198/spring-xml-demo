@@ -13,6 +13,9 @@ public class Main1 {
         BeanFactory factory = new XmlBeanFactory(res);
         Movie mov = (Movie) factory.getBean("movie");
         System.out.println(mov.getActor().getName());
+        
+        Movie movie = new Movie();
+        movie.setBeanFactory(factory);
 
 
     }
