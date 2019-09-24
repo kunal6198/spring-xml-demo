@@ -38,4 +38,6 @@
 
     <bean id="cycle" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="Init" destroy-method="destroy"></bean>
 
+    <bean id="post" class="com.stackroute.demo.BeanPostProcessorDemoBean"></bean>
+
 </beans>
