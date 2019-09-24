@@ -1,5 +1,6 @@
 package com.stackroute;
 
+import com.stackroute.demo.BeanLifecycleDemoBean;
 import com.stackroute.domain.Actor;
 import com.stackroute.domain.Movie;
 import org.springframework.context.ApplicationContext;
@@ -13,6 +14,10 @@ public class Main2 {
         System.out.println(m.getActor().getName());
 
         movie.setApplicationContext(context);
+
+
+        ApplicationContext context1 = new ClassPathXmlApplicationContext("beans.xml");
+        BeanLifecycleDemoBean beanLifecycleDemoBean = (BeanLifecycleDemoBean) context1.getBean("cycle");
 
 
 

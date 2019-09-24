@@ -36,4 +36,6 @@
 
     </bean>-->
 
+    <bean id="cycle" class="com.stackroute.demo.BeanLifecycleDemoBean" init-method="Init" destroy-method="destroy"></bean>
+
 </beans>
